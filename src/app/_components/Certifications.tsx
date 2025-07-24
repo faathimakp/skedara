@@ -7,7 +7,7 @@ import Iso2 from "@public/svg/iso2.svg";
 
 const Certifications = () => {
   return (
-    <div className=" pt-[16rem] h-screen">
+    <div className=" pt-[16rem] ">
       <div className="relative pb-[6rem] px-[4.5rem] bg-white overflow-hidden">
         <div className="absolute right-0 top-0 z-0">
           <Image
