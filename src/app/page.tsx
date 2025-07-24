@@ -5,6 +5,7 @@ import Service from "./_components/Service";
 import CaseStudy from "./_components/CaseStudy";
 import Certifications from "./_components/Certifications";
 import Blog from "./_components/Blog";
+import Sustainability from "./_components/Sustainability";
 
 const page = () => {
   return (
@@ -15,6 +16,7 @@ const page = () => {
       <CaseStudy />
       <Certifications />
       <Blog />
+      <Sustainability/>
     </div>
   );
 };
