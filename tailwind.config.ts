@@ -17,16 +17,7 @@ const configs: Config = {
       defaultScreens: ["20rem", "90rem"],
     }),
     extend: {
-      colors: {
-        darkCyanBlue: "#004EB3",
-        lightCyanBlue: "#E9F9FF",
-        tealBlue: "#334B6F",
-        bgblue:"#00224D",
-        textblue:"#155CAB",
-        darkgreen:"#003400",
-        greenmedium:"#005800",
-        greenlight:"#008000"
-      },
+      colors: {},
       fontFamily: {
         ppMoriReqular: "var(--font-pp-mori-regular)",
         ppMoriSemibold: "var(--font-pp-mori-semibold)",
@@ -43,12 +34,10 @@ const configs: Config = {
         h6: "1.25rem",
         h7: "2.25rem",
         h8: "0.875rem",
-        h9: "4rem", 
+        h9: "4rem",
         h10: "2.5rem",
-        h11: "3rem", 
+        h11: "3rem",
         h12: "0.5rem",
-      
-        
       },
     },
   },

@@ -28,8 +28,8 @@ const cards = [
 ];
 const WhySkedara = () => {
   return (
-    <>
-      <div  className="px-[4.5rem] -mt-[4.5rem]">
+    <> 
+      <div className="px-[4.5rem] -mt-[4.5rem]" id="work">
         <Image src={Why} alt="Why Skedara" />
         <div className="pt-[4rem]">
           <section className="flex flex-col md:flex-row justify-center items-start gap-[1.0625rem] pl-[10.5rem]  bg-white">
@@ -38,7 +38,8 @@ const WhySkedara = () => {
                 key={index}
                 className="bg-[#D2E0F6] rounded-xl p-6 w-full md:w-[22.6875rem] h-[30rem] shadow-sm relative"
                 style={{
-                  clipPath: "polygon(0 5%, 100% 0%, 100% 100%, 0% 100%)", 
+                  clipPath: "polygon(0 8%, 95% 0%, 100% 0, 100% 100%, 0% 100%)",
+                  borderRadius: "1rem 1rem 1rem 1rem",
                 }}
               >
                 <h3 className="text-[#0B2A67] text-h2 leading-[2rem] font-semibold pt-[5.4375rem] mb-[2.125rem]">

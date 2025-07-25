@@ -10,7 +10,7 @@ import Footerbg from "@public/svg/footer.svg";
 
 const Footer = () => {
   return (
-    <footer className="relative text-white overflow-hidden pt-0 -mt-28 ">
+    <footer className="relative text-white overflow-hidden pt-0 -mt-[8.2rem] " id="contact">
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <Image
           src={Footerbg}

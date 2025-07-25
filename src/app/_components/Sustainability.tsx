@@ -2,6 +2,7 @@ import React from "react";
 import Bulb from "@public/svg/bulb.svg";
 import Arrow from "@public/svg/bulbarrow.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const skedaraItems = [
   { label: "SYSTEM", value: "S" },
@@ -12,7 +13,7 @@ const skedaraItems = [
 
 const Sustainability = () => {
   return (
-    <div className="flex  w-full ">
+    <div className="flex  w-full  " id="sustainability">
       <div className="flex flex-col items-center gap-[3.5625rem] pt-[6.5rem]  pb-[3.5rem]   w-[28%] bg-white  ">
         {skedaraItems.map((item, index) => (
           <div key={index} className="flex flex-col items-center text-center ">
@@ -31,7 +32,7 @@ const Sustainability = () => {
         <Image
           src={Arrow}
           alt="Bulb"
-          className="w-[6.5rem] h-[4.25rem]  absolute top-[10.625rem] right-[19rem]"
+          className="w-[6.5rem] h-[4.25rem]  absolute top-[15.625rem] right-[19rem]"
         />
         <Image
           src={Bulb}
@@ -51,9 +52,11 @@ const Sustainability = () => {
             deliver. Our green IT practices and ESG-aligned solutions empower
             clients to operate responsibly while building future-ready systems.
           </p>
-          <button className="bg-[#0B2A67] hover:bg-[#0b2457] text-white font-semibold text-h3 rounded-[1rem] px-[1.5rem] py-[0.5rem] shadow-md transition">
-            Explore Sustainability Goals
-          </button>
+         <Link href={"/#sustainability"}>
+              <button className="bg-[#0B2A67] hover:bg-[#0b2457] text-white font-semibold text-h3 rounded-[1rem] px-[1.5rem] py-[0.5rem] shadow-md transition">
+                Explore Sustainability Goals
+              </button>
+         </Link>
         </div>
       </div>
     </div>

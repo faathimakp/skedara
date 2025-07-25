@@ -8,12 +8,12 @@ import Link from "next/link";
 
 const navItems = [
   { name: "HOME", path: "/" },
-  { name: "SUSTAINABILITY", path: "/sustainability" },
-  { name: "WORK", path: "/work" },
-  { name: "SERVICE", path: "/service" },
-  { name: "BLOG", path: "/blog" },
-  { name: "ABOUT", path: "/about" },
-  { name: "CONTACT", path: "/contact" },
+  { name: "SUSTAINABILITY", path: "/#sustainability" },
+  { name: "WORK", path: "/#work" },
+  { name: "SERVICE", path: "/#service" },
+  { name: "BLOG", path: "/#blog" },
+  { name: "ABOUT", path: "/#work" },
+  { name: "CONTACT", path: "/#contact" },
 ];
 
 const Header = () => {

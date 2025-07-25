@@ -37,7 +37,7 @@ const blogData = [
 
 const Blog = () => {
   return (
-    <div className="relative bg-[#0B2A67] px-[4.5rem] pt-[6.5rem] pb-[20rem] overflow-hidden">
+    <div className="relative bg-[#0B2A67] px-[4.5rem] pt-[6.5rem] pb-[20rem] overflow-hidden" id="blog">
       <Image
         src={Leftbg}
         alt="Left Background"
