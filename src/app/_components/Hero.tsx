@@ -4,7 +4,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <>
-      <div className="pr-[4.5rem]">
+      <div className="pr-[4.5rem] ">
         <div className="relative w-full h-[100vh]">
           {/* Background Image */}
           <Image
@@ -16,7 +16,7 @@ const Hero = () => {
           />
 
           {/* Text Content Overlay */}
-          {/* <div className="absolute bottom-[10.1875rem] left-[6.5rem] w-full h-full flex items-center ">
+          <div className="absolute bottom-[10.1875rem] justify-center w-full h-full flex items-center ">
             <div className="text-white max-w-3xl">
               <h1 className="text-h11 font-bold leading-[3.5rem]">
                 Global Experts In <span className="text-[#0CBA4C]">Energy</span>{" "}
@@ -38,7 +38,7 @@ const Hero = () => {
                 
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </>

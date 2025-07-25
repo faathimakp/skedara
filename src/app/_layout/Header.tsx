@@ -20,7 +20,7 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="flex items-center justify-between w-full px-[4.5rem] py-4 shadow-md bg-white">
+    <header className="flex items-center justify-between w-full px-[4.5rem] py-4 shadow-md bg-white sticky top-0 z-[500]">
       <Link href={"/"}>
         <div className="flex items-center gap-2">
           <Image
