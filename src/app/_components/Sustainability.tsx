@@ -13,8 +13,8 @@ const skedaraItems = [
 
 const Sustainability = () => {
   return (
-    <div className="flex  w-full  " id="sustainability">
-      <div className="flex flex-col items-center gap-[3.5625rem] pt-[6.5rem]  pb-[3.5rem]   w-[28%] bg-white  ">
+    <div className="md:flex-row flex flex-col  w-full  " id="sustainability">
+      <div className="flex md:flex-col flex-row overflow-x-auto w-full items-center gap-[3.5625rem] pt-[6.5rem]  pb-[3.5rem]   md:w-[28%] bg-white  ">
         {skedaraItems.map((item, index) => (
           <div key={index} className="flex flex-col items-center text-center ">
             <div className="w-[6.25rem] h-[6.25rem] rounded-full bg-[#D9D9D9B2]   px-[1.9375rem] py-[0.875rem] flex items-center mb-[1.5rem]">
@@ -28,18 +28,18 @@ const Sustainability = () => {
           </div>
         ))}
       </div>
-      <div className="w-[72%] bg-[#F4F7FC] relative ">
+      <div className=" w-full md:w-[72%] bg-[#F4F7FC] relative ">
         <Image
           src={Arrow}
           alt="Bulb"
-          className="w-[6.5rem] h-[4.25rem]  absolute top-[15.625rem] right-[19rem]"
+          className="w-[6.5rem] h-[4.25rem] md:block hidden  absolute top-[15.625rem] right-[19rem]"
         />
         <Image
           src={Bulb}
           alt="Bulb"
-          className="w-[40.875rem] h-auto  absolute top-[14.75rem] right-[9.8125rem]"
+          className="~w-[30rem]/[40.875rem] h-auto  lg:block hidden  absolute top-[14.75rem] right-[9.8125rem]"
         />
-        <div className="px-[7.3125rem] pt-[6.5rem] max-w-xl">
+        <div className="~px-[1.5rem]/[7.3125rem] pt-[6.5rem] max-w-xl">
           {" "}
           <h4 className="text-[#0367A1E5] text-[1.5rem] font-normal uppercase mb-[2rem] leading-[1.5rem]">
             Sustainability

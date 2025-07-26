@@ -5,7 +5,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <>
-      <div className="pr-[4.5rem] ">
+      <div className="~pr-[0rem]/[4.5rem] ">
         <div className="relative w-full h-[100vh]">
           <Image
             src={BgImage}
@@ -15,14 +15,14 @@ const Hero = () => {
             priority
           />
 
-          <div className="absolute bottom-[10.1875rem] justify-center w-full h-full flex items-center ">
+          <div className="absolute bottom-[10.1875rem] justify-center ~pl-[1rem]/[0rem] w-full h-full flex items-center ">
             <div className="text-white max-w-3xl">
-              <h1 className="text-h11 font-bold leading-[3.5rem]">
+              <h1 className="~text-h2/h11 font-bold ~leading-[1.8rem]/[3.5rem]">
                 Global Experts In <span className="text-[#0CBA4C]">Energy</span>{" "}
                 IT Operations | Driving Stability, Scalability, And{" "}
                 <span className="text-[#0CBA4C]">Sustainability</span>.
               </h1>
-              <p className="mt-4 text-h4  text-[#ECEAE8] max-w-2xl">
+              <p className="mt-4 ~text-h8/h4  text-[#ECEAE8] max-w-2xl">
                 From Energy Trading System Reliability To Renewable Integration,
                 Skedara Transforms IT Operations Into Engines Of Growth With
                 Sustainable And Innovative Solutions.

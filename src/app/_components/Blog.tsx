@@ -37,7 +37,7 @@ const blogData = [
 
 const Blog = () => {
   return (
-    <div className="relative bg-[#0B2A67] px-[4.5rem] pt-[6.5rem] pb-[20rem] overflow-hidden" id="blog">
+    <div className="relative bg-[#0B2A67] ~px-[1.5rem]/[4.5rem] ~pt-[2.5rem]/[6.5rem] ~pb-[8rem]/[20rem] overflow-hidden" id="blog">
       <Image
         src={Leftbg}
         alt="Left Background"
@@ -65,7 +65,7 @@ const Blog = () => {
                 alt={item.title}
                 className="w-full h-[320px] object-cover rounded-[1rem]"
               />
-              <div className="absolute top-[13.5rem] left-0 bg-white w-[23.6875rem] h-full rounded-[1rem] px-[1.875rem] py-[2.5rem] shadow-lg">
+              <div className="hidden lg:block absolute top-[13.5rem] left-0 bg-white ~w-[18.6875rem]/[23.6875rem] h-full rounded-[1rem] px-[1.875rem] py-[2.5rem] shadow-lg">
                 <h3 className="text-[1.25rem] font-semibold text-black mb-[1.5rem] leading-[2rem]">
                   {item.title}
                 </h3>

@@ -11,10 +11,10 @@ import Link from "next/link";
 
 const CaseStudy = () => {
   return (
-    <div className="px-[4.5rem]" id="casestudy">
-      <div className="flex flex-col lg:flex-row items-center justify-center  pt-[6.5rem] gap-[7.875rem]">
+    <div className="~px-[1.5rem]/[4.5rem]" id="casestudy">
+      <div className="flex flex-col lg:flex-row items-center justify-center  ~pt-[2rem]/[6.5rem] md:gap-[7.875rem]">
         <div className="relative  pt-[6rem]">
-          <div className="flex flex-col md:flex-row gap-[1rem] items-start justify-between relative z-10">
+          <div className=" hidden md:flex flex-col md:flex-row gap-[1rem] items-start justify-between relative z-10">
             <div className="relative w-fit">
               <Image
                 src={Man}
@@ -60,7 +60,7 @@ const CaseStudy = () => {
             backgroundImage: `url(${Bgimage.src})`,
           }}
         >
-          <div className="pt-[10.6875rem]">
+          <div className="md:pt-[10.6875rem]">
             {" "}
             <h4 className="text-[#0367A1E5] text-[1.5rem] font-normal uppercase mb-[2rem] leading-[1.5rem]">
               case study

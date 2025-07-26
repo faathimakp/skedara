@@ -7,8 +7,8 @@ import Link from "next/link";
 
 const Service = () => {
   return (
-    <div className="bg-[#F4F7FC] pb-[17.125rem]" id="service">
-      <div className="flex flex-col lg:flex-row items-start justify-between px-[4.5rem] pt-[6.5rem]  gap-[8.1875rem]">
+    <div className="bg-[#F4F7FC] ~pb-[8rem]/[17.125rem]" id="service">
+      <div className="flex flex-col lg:flex-row items-start justify-between ~px-[1.5rem]/[4.5rem] ~pt-[2rem]/[6.5rem]  ~gap-[3rem]/[8.1875rem]">
         {/* Left Side Text */}
         <div className="flex-1 max-w-sm mt-[4.5625rem]">
           <h4 className="text-[#0367A1E5] text-[1.5rem] font-normal  mb-[2rem] leading-[1.5rem]">
@@ -29,14 +29,14 @@ const Service = () => {
         </div>
 
         {/* Right Side with Image Background and Cards */}
-        <div className="flex-1 relative w-full  ">
+        <div className="  flex-1 relative w-full  ">
           <Image
             src={bBgimage}
             alt="Service Background"
             className="rounded-xl w-full object-cover"
           />
 
-          <div className="absolute top-[6.25rem] inset-x-0 flex flex-col md:flex-row justify-center items-center gap-6 ">
+          <div className="absolute top-[6.25rem] inset-x-0 hidden md:flex flex-row justify-center items-center gap-6 ">
             <div className="bg-white rounded-xl px-[1.5rem] py-[2.5rem] shadow-md  max-w-[19.75rem]">
               <h3 className=" text-[1.25rem] leading-[2rem] font-semibold text-black mb-[2rem]">
                 Core Services: <br />

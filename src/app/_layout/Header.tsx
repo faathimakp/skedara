@@ -20,17 +20,17 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="flex items-center justify-between w-full px-[4.5rem] py-4 shadow-md bg-white sticky top-0 z-[500]">
+    <header className="flex items-center md:justify-between w-full ~px-[1.5rem]/[4.5rem] py-4 shadow-md bg-white sticky top-0 z-[500]">
       <Link href={"/"}>
         <div className="flex items-center gap-2">
           <Image
             src={Logo}
             alt="Skedara Logo"
-            className="w-[14.375rem] h-[3.25rem] object-cover"
+            className="~w-[11rem]/[14.375rem]  object-cover"
           />
         </div>
       </Link>
-      <nav className="hidden md:flex gap-[2.5rem] items-center">
+      <nav className="hidden lg:flex ~gap-[1rem]/[2.5rem] items-center">
         {navItems.map((item, index) => {
           const isActive = pathname === item.path;
           return (

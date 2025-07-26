@@ -7,9 +7,9 @@ import Iso2 from "@public/svg/iso2.svg";
 
 const Certifications = () => {
   return (
-    <div className=" pt-[16rem] ">
-      <div className="relative pb-[6rem] px-[4.5rem] bg-white overflow-hidden">
-        <div className="absolute right-0 top-0 z-0">
+    <div className=" ~pt-[5rem]/[16rem] ">
+      <div className="relative ~pb-[3rem]/[6rem] ~px-[1.5rem]/[4.5rem] bg-white overflow-hidden">
+        <div className=" hidden lg:flex absolute right-0 top-0 z-0">
           <Image
             src={RightIcon}
             alt="Right icon"
@@ -18,16 +18,16 @@ const Certifications = () => {
         </div>
 
         <div className="relative z-10">
-          <h4 className="text-[#0367A1E5] text-[1.5rem] font-normal uppercase mb-[2rem] leading-[1.5rem]">
+          <h4 className="text-[#0367A1E5] text-[1.5rem] font-normal uppercase ~mb-[1.25rem]/[2rem] leading-[1.5rem]">
             Certifications
           </h4>
-          <h2 className="text-[1.875rem] font-medium text-black leading-[2.5rem] mb-[2rem]">
+          <h2 className="~text-[1.25rem]/[1.875rem] font-medium text-black ~leading-[1.5rem]/[2.5rem] mb-[2rem]">
             Building Trust with Industry <br /> Standards.
           </h2>
           <div className="flex flex-col justify-center items-center">
-            <div className="flex flex-col md:flex-row items-center gap-[3.375rem] mb-[2rem]">
+            <div className="flex flex-col md:flex-row items-center ~gap-[2rem]/[3.375rem] mb-[2rem]">
               <Image src={Iso1} alt="ISO 14001" className="size-[8.0625rem]" />
-              <div className="bg-white rounded-[1rem] shadow-md px-[3.1875rem] py-[3.5rem] md:w-[43.25rem] ">
+              <div className="bg-white rounded-[1rem] shadow-md ~px-[1.5rem]/[3.1875rem] ~py-[2rem]/[3.5rem] md:w-[43.25rem] ">
                 <h3 className="text-[#0B2A67] font-semibold text-[1.625rem] leading-[2rem] mb-[2rem]">
                   ISO 14001:
                 </h3>
@@ -38,8 +38,8 @@ const Certifications = () => {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center gap-[3.375rem]">
-              <div className="bg-white rounded-[1rem] shadow-md px-[3.1875rem] py-[3.5rem] md:w-[43.25rem] ">
+            <div className="flex flex-col md:flex-row items-center ~gap-[2rem]/[3.375rem]">
+              <div className="bg-white rounded-[1rem] shadow-md ~px-[1.5rem]/[3.1875rem] ~py-[2rem]/[3.5rem] md:w-[43.25rem] ">
                 <h3 className="text-[#0B2A67] font-semibold text-[1.625rem] leading-[2rem] mb-[2rem]">
                   ISO 27001:
                 </h3>

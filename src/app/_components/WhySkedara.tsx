@@ -29,10 +29,10 @@ const cards = [
 const WhySkedara = () => {
   return (
     <> 
-      <div className="px-[4.5rem] -mt-[4.5rem]" id="work">
+      <div className="~px-[1.5rem]/[4.5rem] -mt-[4.5rem]" id="work">
         <Image src={Why} alt="Why Skedara" />
-        <div className="pt-[4rem]">
-          <section className="flex flex-col md:flex-row justify-center items-start gap-[1.0625rem] pl-[10.5rem]  bg-white">
+        <div className="~pt-[2.5rem]/[4rem]">
+          <section className="flex flex-col md:flex-row justify-center items-start gap-[1.0625rem] ~pl-[0rem]/[10.5rem]  bg-white">
             {cards.map((card, index) => (
               <div
                 key={index}
@@ -42,7 +42,7 @@ const WhySkedara = () => {
                   borderRadius: "1rem 1rem 1rem 1rem",
                 }}
               >
-                <h3 className="text-[#0B2A67] text-h2 leading-[2rem] font-semibold pt-[5.4375rem] mb-[2.125rem]">
+                <h3 className="text-[#0B2A67] text-h2 leading-[2rem] font-semibold ~pt-[2.5rem]/[5.4375rem] mb-[2.125rem]">
                   {card.title}
                 </h3>
                 <Image
