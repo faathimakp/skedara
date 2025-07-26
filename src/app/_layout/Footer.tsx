@@ -26,7 +26,7 @@ const Footer = () => {
         <Image src={Triangles} alt="Footer Triangles" />
       </div>
 
-      <div className="relative z-10 ~px-[1.5rem]/[4.5rem] pt-[4.5rem] pb-[4.625rem]">
+      <div className="relative z-10 ~px-[1.5rem]/[4.5rem] pt-[4.5rem] ~pb-[1rem]/[4.625rem]">
         <div className="flex flex-col items-start md:items-end md:mb-[4rem]">
           <Image
             src={SkedaraLogo}

@@ -1,10 +1,12 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Logo from "@public/svg/HeaderLogo.svg";
 import Link from "next/link";
+import MenuIcon from "../components/svg/MenuIcon";
+import MenuRes from "../components/MenuRes";
 
 const navItems = [
   { name: "HOME", path: "/" },
@@ -19,8 +21,10 @@ const navItems = [
 const Header = () => {
   const pathname = usePathname();
 
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header className="flex items-center md:justify-between w-full ~px-[1.5rem]/[4.5rem] py-4 shadow-md bg-white sticky top-0 z-[500]">
+    <header className="flex items-center justify-between w-full ~px-[1.5rem]/[4.5rem] py-4 shadow-md bg-white sticky top-0 z-[500]">
       <Link href={"/"}>
         <div className="flex items-center gap-2">
           <Image
@@ -30,6 +34,24 @@ const Header = () => {
           />
         </div>
       </Link>
+       <div className="flex justify-end items-end lg:hidden">
+        <MenuIcon
+          onClick={() => setIsOpen(true)}
+          className="w-[1.125rem] h-[1rem] text-greenmedium"
+        />
+        {isOpen && (
+          <>
+            <div
+              className="fixed inset-0 bg-black/50 z-[99]"
+              onClick={() => setIsOpen(false)}
+            ></div>
+            <div className="bg-white rounded-[1rem] shadow-[0_4px_10px_rgba(0,0,0,0.15)] fixed right-[1.5rem] top-[3rem] z-[100]">
+              {" "}
+              <MenuRes setIsOpen={setIsOpen} />
+            </div>
+          </>
+        )}
+      </div>
       <nav className="hidden lg:flex ~gap-[1rem]/[2.5rem] items-center">
         {navItems.map((item, index) => {
           const isActive = pathname === item.path;
