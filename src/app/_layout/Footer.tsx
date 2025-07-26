@@ -40,7 +40,7 @@ const Footer = () => {
             and SOC 2 for operational excellence.
           </p>
 
-          <div className="md:flex-row flex flex-col justify-start md:justify-center ~gap-[1rem]/[2.5rem] text-[1rem] text-[#FAFAFA] leading-[3rem] font-medium uppercase mb-[1rem] border-b border-[#FAFAFA]/30 pb-[1.5rem] w-fit">
+          <div className="md:flex-row flex flex-col justify-start md:justify-center ~gap-[0rem]/[2.5rem] text-[1rem] text-[#FAFAFA] leading-[3rem] font-medium uppercase mb-[1rem] border-b border-[#FAFAFA]/30 pb-[1.5rem] w-fit">
             <a href={"/#service"} className="hover:text-[#0CBA4C]">
               Services
             </a>
